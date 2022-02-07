@@ -15,7 +15,7 @@ kubectl vsphere login --server 192.168.5.41 --vsphere-username administrator@vsp
 tanzu apps workload delete weatherforecast -n orf
 ```
 
-Unzip and cd into dir and upload to GIT
+Unzip and cd into dir and upload to Git
 ```
 unzip spring-petclinic.zip
 cd spring-petclinic
