@@ -170,5 +170,6 @@ envoy     LoadBalancer   198.51.100.113   192.168.5.45   80:32060/TCP,443:31124/
 [root@orfdns tap]# 
 ```
 
+![Version](https://github.com/ogelbric/TAP/blob/main/DNS.png)
 
  
