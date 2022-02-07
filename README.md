@@ -157,10 +157,15 @@ The tap-install.yaml file has the following entry:
 ```
 cnrs:
   domain_name: cnrs.lab.local
+```
  
- ```
+ This command will add it to an existing TAP deploy: 
  
- And my DNS server has a star record for the cnrs sub domain which points to the ingress:
+```
+ tanzu package installed update tap -p tap.tanzu.vmware.com -v 1.0.0 --values-file tap-values.yaml -n tap-install
+```
+
+ DNS server has a star record for the cnrs sub domain which points to the ingress:
  
  ```
  [root@orfdns tap]# k get svc -n tanzu-system-ingress
