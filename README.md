@@ -217,3 +217,10 @@ The repo (docker in this case) will have a new entry for petclinic:
 
 ![Version](https://github.com/ogelbric/TAP/blob/main/Docker.png)
 
+In this case every minute the Git repo is checked for new code: 
+```
+k get gitrepository spring-petclinic -n orf -o yaml | grep interval
+        f:interval: {}
+  interval: 1m0s
+ ```
+ 
