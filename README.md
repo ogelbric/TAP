@@ -1,6 +1,7 @@
 # Tanzu Application Platform (TAP)
 
 ## TAP Install
+Write up in progress for the TAP install
 
 ## TAP Application install (petclinc)
 
