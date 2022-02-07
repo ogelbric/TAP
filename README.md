@@ -2,7 +2,7 @@
 
 ## TAP Install
 
-## Application (xyz) install
+## TAP Application install (petclinc)
 
 Select in TAP GUI an application and locate zip file:
 
