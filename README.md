@@ -31,3 +31,13 @@ Login with ID and key as password (key is obtained in the profile section in GIT
 Result in Git should look like this:
 
 ![Version](https://github.com/ogelbric/TAP/blob/main/GitResult.png)
+
+Create a namespace and docker secret (or other registry) for application (kubectl is aliased to k) (notice for diocker /v1/ is a must!):
+```
+k create ns orf
+
+tanzu secret registry add registry-credentials --server https://index.docker.io/v1/ --username ogelbric --password 'xxxxxxxx!' --namespace orf
+
+```
+
+
