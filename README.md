@@ -265,4 +265,7 @@ spring-petclinic-config-writer-s9mrl-pod             0/1     Completed   0      
 
 ```
 
+Register URL in TAP GUI (https://github.com/ogelbric/spring-petclinic/tree/main/catalog/catalog-info.yaml)
+
+
 
