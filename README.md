@@ -213,6 +213,7 @@ NAME               LATESTIMAGE                                                  
 spring-petclinic   index.docker.io/ogelbric/spring-petclinic-orf@sha256:36cc4776d066fc7f942d56e3ec1326974dc4bb55160a0a5268175ab7d8e93436   True
  
  ```
- 
+The repo (docker in this case) will have a new entry for petclinic:
+
 ![Version](https://github.com/ogelbric/TAP/blob/main/Docker.png)
 
