@@ -270,4 +270,5 @@ Register URL in TAP GUI (https://github.com/ogelbric/spring-petclinic/tree/main/
 
 ![Version](https://github.com/ogelbric/TAP/blob/main/TAPRegister1.png)
 ![Version](https://github.com/ogelbric/TAP/blob/main/TAPRegister2.png)
+![Version](https://github.com/ogelbric/TAP/blob/main/TAPRegister3.png)
 
