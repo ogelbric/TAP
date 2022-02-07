@@ -139,4 +139,15 @@ role.rbac.authorization.k8s.io/default unchanged
 rolebinding.rbac.authorization.k8s.io/default unchanged
 ```
 
+Run this for the application (the names have to match up): 
+
+```
+tanzu apps workload create spring-petclinic \
+--git-repo https://github.com/ogelbric/spring-petclinic \
+--git-branch main \
+--type web \
+--app spring-petclinic \
+--yes --namespace orf
+```
+
 
