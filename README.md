@@ -181,6 +181,8 @@ envoy     LoadBalancer   198.51.100.113   192.168.5.45   80:32060/TCP,443:31124/
  Here are a few commands to check things out: 
  
  ```
+kubectl get pods -n tap-install --watch
+
 k get routes -n orf
 NAME               URL                                          READY   REASON
 spring-petclinic   http://spring-petclinic.orf.cnrs.lab.local   True    
