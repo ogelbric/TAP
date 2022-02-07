@@ -208,7 +208,9 @@ accelerator-system   weatherforecast-fsharp-acc-xdnpm     https://github.com/sam
 accelerator-system   weatherforecast-steeltoe-acc-dth6n   https://github.com/sample-accelerators/steeltoe-weatherforecast.git   True    Fetched revision: tap-1.0/4b6a08d43859df65ed598bb309c291f4b9f57569   11d
 orf                  spring-petclinic                     https://github.com/ogelbric/spring-petclinic                          True    Fetched revision: main/418aed4cdcfda152b8885dec77bb96e39d5a0831      3h15m
 
- 
+k get images.kpack.io -n orf
+NAME               LATESTIMAGE                                                                                                             READY
+spring-petclinic   index.docker.io/ogelbric/spring-petclinic-orf@sha256:36cc4776d066fc7f942d56e3ec1326974dc4bb55160a0a5268175ab7d8e93436   True
  
  ```
  
