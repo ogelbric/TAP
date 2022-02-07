@@ -178,4 +178,35 @@ envoy     LoadBalancer   198.51.100.113   192.168.5.45   80:32060/TCP,443:31124/
 
 ![Version](https://github.com/ogelbric/TAP/blob/main/DNS.png)
 
+ Here are a few commands to check things out: 
+ 
+ ```
+k get routes -n orf
+NAME               URL                                          READY   REASON
+spring-petclinic   http://spring-petclinic.orf.cnrs.lab.local   True    
+
+
+k get revisions.serving.knative.dev -n orf
+NAME                     CONFIG NAME        K8S SERVICE NAME   GENERATION   READY   REASON   ACTUAL REPLICAS   DESIRED REPLICAS
+spring-petclinic-00001   spring-petclinic                      1            True             0                 0
+
+k get gitrepository -A
+NAMESPACE            NAME                                 URL                                                                   READY   STATUS                                                               AGE
+accelerator-system   hello-fun-acc-2xbkf                  https://github.com/sample-accelerators/hello-fun                      True    Fetched revision: tap-1.0/717160c8a713e1c32e371e4ac788727464f39e89   11d
+accelerator-system   hello-ytt-acc-ccq7b                  https://github.com/sample-accelerators/hello-ytt                      True    Fetched revision: tap-1.0/95921a9f9a62a758e11fb4cef612ccb168b89114   11d
+accelerator-system   new-accelerator-acc-9qhgz            https://github.com/sample-accelerators/new-accelerator                True    Fetched revision: tap-1.0/b4dc3cf8fd27cef532ab303c2bc8836a53ca4c66   11d
+accelerator-system   node-express-acc-rpzhg               https://github.com/sample-accelerators/node-express                   True    Fetched revision: tap-1.0/b0c81e5df690bd2ec0cb6c1bbc0e5e0a32556914   11d
+accelerator-system   spring-petclinic-acc-rbpk9           https://github.com/sample-accelerators/spring-petclinic               True    Fetched revision: tap-1.0/334ed57bdda51aba0f671e9ae4b184783b7af74b   11d
+accelerator-system   spring-sensors-rabbit-acc-rpmwc      https://github.com/sample-accelerators/spring-sensors                 True    Fetched revision: tap-1.0/cc167e5717122d51bbb2adfd9a52fd4e3a2ffce6   11d
+accelerator-system   spring-sql-jpa-acc-mbxg7             https://github.com/sample-accelerators/spring-sql-jpa                 True    Fetched revision: tap-1.0/b3f4c22d0ba1b0d145799a0834a40a2095c490cc   11d
+accelerator-system   tanzu-java-web-app-acc-cvsfg         https://github.com/sample-accelerators/tanzu-java-web-app.git         True    Fetched revision: tap-1.0/90bd107ad26e228886e2ad28c964580858196376   11d
+accelerator-system   tap-initialize-acc-qkxpq             https://github.com/sample-accelerators/tap-initialize                 True    Fetched revision: tap-1.0/3966b2c5f13e8d6ac593d2a16ce734db29faacad   11d
+accelerator-system   weatherforecast-csharp-acc-6ncdd     https://github.com/sample-accelerators/csharp-weatherforecast.git     True    Fetched revision: tap-1.0/81b8aa8288c38c33223e9140359552d527010c0f   11d
+accelerator-system   weatherforecast-fsharp-acc-xdnpm     https://github.com/sample-accelerators/fsharp-weatherforecast.git     True    Fetched revision: tap-1.0/a405127123339686825245d455a016ecd59556b1   11d
+accelerator-system   weatherforecast-steeltoe-acc-dth6n   https://github.com/sample-accelerators/steeltoe-weatherforecast.git   True    Fetched revision: tap-1.0/4b6a08d43859df65ed598bb309c291f4b9f57569   11d
+orf                  spring-petclinic                     https://github.com/ogelbric/spring-petclinic                          True    Fetched revision: main/418aed4cdcfda152b8885dec77bb96e39d5a0831      3h15m
+
+ 
+ 
+ ```
  
