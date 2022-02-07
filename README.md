@@ -152,4 +152,23 @@ tanzu apps workload create spring-petclinic \
 
 ![Version](https://github.com/ogelbric/TAP/blob/main/TAPoutcome1.png)
 
+The tap-install.yaml file has the following entry:
 
+```
+cnrs:
+  domain_name: cnrs.lab.local
+ 
+ ```
+ 
+ And my DNS server has a star record for the cnrs sub domain which points to the ingress:
+ 
+ ```
+ [root@orfdns tap]# k get svc -n tanzu-system-ingress
+NAME      TYPE           CLUSTER-IP       EXTERNAL-IP    PORT(S)                      AGE
+contour   ClusterIP      198.51.100.181   <none>         8001/TCP                     11d
+envoy     LoadBalancer   198.51.100.113   192.168.5.45   80:32060/TCP,443:31124/TCP   11d
+[root@orfdns tap]# 
+```
+
+
+ 
