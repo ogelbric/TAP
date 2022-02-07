@@ -182,10 +182,35 @@ envoy     LoadBalancer   198.51.100.113   192.168.5.45   80:32060/TCP,443:31124/
  
  ```
 kubectl get pods -n tap-install --watch
+k describe clustersupplychain source-to-url -A
+k get workload -A
+k get events -n orf
+k get events -n build-service
+k logs tanzu-java-web-app-build-1-build-pod -n orf
+
+k get podintent -n orf
+NAME               READY   REASON   AGE
+spring-petclinic   True             4h54m
+
+tanzu apps workload list --all-namespaces
+NAMESPACE   NAME               APP                READY   AGE
+orf         spring-petclinic   spring-petclinic   Ready   4h49m
 
 k get routes -n orf
 NAME               URL                                          READY   REASON
 spring-petclinic   http://spring-petclinic.orf.cnrs.lab.local   True    
+
+k get images -A
+NAMESPACE         NAME                                    IMAGE
+knative-serving   queue-proxy                             registry.tanzu.vmware.com/tanzu-application-platform/tap-packages@sha256:6a45260dc74b86df779e7ebc35d594ff8f4dfabce4f6ce7c5214cd079f97dbf2
+orf               spring-petclinic-00001-cache-workload   index.docker.io/ogelbric/spring-petclinic-orf@sha256:36cc4776d066fc7f942d56e3ec1326974dc4bb55160a0a5268175ab7d8e93436
+
+tanzu secret registry list -n orf
+/ Retrieving registry secrets... 
+  NAME                                       REGISTRY                     EXPORTED      AGE    
+  registry-credentials                       https://index.docker.io/v1/  not exported  4d23h  
+  tap-registry                               registry.tanzu.vmware.com    not exported  5d10h  
+  tbs-builder-secret-gen-placeholder-secret  registry.tanzu.vmware.com    not exported  4h54m  
 
 
 k get revisions.serving.knative.dev -n orf
