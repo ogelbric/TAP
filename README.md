@@ -224,3 +224,20 @@ k get gitrepository spring-petclinic -n orf -o yaml | grep interval
   interval: 1m0s
  ```
  
+After activity in the GUI a pod will be spun up (serverless):
+```
+
+k get pods -n orf
+NAME                                       READY   STATUS      RESTARTS   AGE
+spring-petclinic-build-1-build-pod         0/1     Completed   0          4h53m
+spring-petclinic-config-writer-s9mrl-pod   0/1     Completed   0          4h46m
+
+k get pods -n orf
+NAME                                                 READY   STATUS      RESTARTS   AGE
+spring-petclinic-00001-deployment-5dc5f59447-8skhx   1/2     Running     0          6s
+spring-petclinic-build-1-build-pod                   0/1     Completed   0          4h53m
+spring-petclinic-config-writer-s9mrl-pod             0/1     Completed   0          4h46m
+
+```
+
+
