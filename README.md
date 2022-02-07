@@ -27,7 +27,7 @@ git remote add origin https://github.com/ogelbric/spring-petclinic.git
 curl -u ogelbrich:ghp_VxxxxxxxmGaxxxxMyKEYXxxxxxxxxxxxxxxxx https://api.github.com/user/repos -d '{"name":"spring-petclinic"}'
 git push -u origin main
 Login with ID and key as password (key is obtained in the profile section in GIT)
-
-
 ```
+Result in Git should look like this:
 
+![Version](https://github.com/ogelbric/TAP/blob/main/GitResult.png)
