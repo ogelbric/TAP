@@ -150,4 +150,5 @@ tanzu apps workload create spring-petclinic \
 --yes --namespace orf
 ```
 
+![Version](https://github.com/ogelbric/TAP/blob/main/TAPoutcome1.png)
 
