@@ -1,7 +1,19 @@
 # Tanzu Application Platform (TAP)
 
 ## TAP Install
-Write up in progress for the TAP install
+Write up in progress for the TAP install!!!!!!!!
+
+
+Remove old Tanzu CLI install:
+```
+rm -rf $HOME/tanzu/cli        # Remove previously downloaded cli files
+sudo rm /usr/local/bin/tanzu
+rm -rf ~/.config/tanzu/
+rm -rf ~/.tanzu/
+rm -rf ~/.cache/tanzu
+rm -rf ~/Library/Application\ Support/tanzu-cli/* # Remove plug-ins
+```
+
 
 ## TAP Application install (petclinc)
 
